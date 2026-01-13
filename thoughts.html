@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connor Brown | My Thoughts</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="nav-title">Connor Brown</div>
+        <nav class="nav-links">
+          <a href="./index.html" data-nav-link>Home</a>
+          <a href="./projects.html" data-nav-link>Projects</a>
+          <a href="./thoughts.html" data-nav-link>My Thoughts</a>
+          <a href="./contact.html" data-nav-link>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container section">
+        <h1 class="section-title">My Thoughts</h1>
+        <p class="section-subtitle">
+          Filter and search the latest posts. Edit posts in
+          <code>assets/js/data.js</code>.
+        </p>
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search posts"
+          aria-label="Search posts"
+          data-post-search
+        />
+        <div class="filters" data-category-chips></div>
+        <div data-posts-list></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span data-year></span> Connor Brown. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/thoughts.js"></script>
+  </body>
+</html>
